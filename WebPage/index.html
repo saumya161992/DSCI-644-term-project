@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Software Engineering for Data Science Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="resources/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Make NAV smaller in font size, add box highlight, Course Name at far left in NAV, links to the right -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#summary">Project Synopsis</a>
+            </li>
+            <li>
+                <a href="#reqs">Requirements</a>
+            </li>
+            <li>
+                <a href="#goal">Goals</a>
+            </li>
+            <li>
+                <a href="#architecture">Architecture</a>
+            </li>
+            <li>
+                <a href="#plan">Project Plan</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <header>
+            <h1>DSCI 644 - Project Team A</h1>
+            <h4>A new and improved machine learning model to provide better detection against inaccurate text reviews
+            </h4>
+        </header>
+
+        <main>
+            <section id="summary">
+				<h2>Project Synopsis:</h2>
+                <div class='imgBox'>
+                    <p>
+                        The current Multi-Class Prediction Model to predict the recommendation of a text review is
+                        fairly inaccurate and does not perform to an acceptable standard. It currently has an accuracy
+                        of approximately 60% and tends to be biased towards a specific class.
+                        In order to provide better results against inaccurate reviews, a new Multi Class Nerual Network
+                        Machine Learning model is presented that will be free of that biasing and will provide predictions with
+                        a higher accuracy than the initial model.
+                    </p>
+                </div>
+            </section>
+
+            <section id="reqs">
+				<h2>Project Requirements:</h2>
+                <div class='imgBox'>
+                    <p>
+                        The major requirement of this project is to provide a new multi-class machine learning model with better
+                        accuracy than the current model and to eliminate the biasing in the current model. The proposed implementation
+                        will also require a new overall architecture and design, along with the new machine learning model with finer
+                        data preprocessing and superior training. Another portion of this implementation is better documentation
+                        for the entire system, such as documenting each component of this design, and what steps are needed to
+                        obtained the intended results.
+                    </p>
+                </div>
+            </section>
+
+            <section id="goal">
+				<h2>Goals:</h2>
+                <div class='imgBox'>
+                    <p>
+                        In order to provide a solution that will fufill the requirements, the whole implementation of the current
+                        model will need to be redesigned. Starting with the machine learning model, a new model type will be needed
+                        and changes will need to take place as for the training of said model. With the new implementation,
+                        the model will be trained with approximately 60-70% of the data set and then tested on the remaining data to
+                        validate accuracy. (Probably needs a few more notes here)
+                    </p>
+                </div>
+            </section>
+
+            <section id="architecture">
+				<h2>Architecture:</h2>
+				<div class="imgBox">
+					<p>
+						The architecure first includes the process of preprocessing the dataset of Amazon reviews. The data is cleaned and then separated into unique identifiers and the text reviews. The text reviews go through further preprocessing to prepare it to be used in the training of the multi-class model. After the dataset is ready, the model is created and the parameters, such as softmax limits and the number of hidden layers is set. The model is then training using 70% of the dataset and then tested using the remaining 30%. The model's performance and accuracy is then tested and the model is tweaked and refined to achieve the required project requirements.
+					</p>
+					<div class="FloatRef">
+						<img src="resources/images/arch_diagram.png" alt="Architecture Diagram"/>
+						<div>
+							<p>Architecture Diagram</p>
+						</div>
+					</div>
+					
+				</div>
+            </section>
+
+            <section id="plan">
+				<h2>Project Plan:</h2>
+                <div class='imgBox'>
+                    <p>
+                        The main tools that are being used to coordinate this project are Slack, Trello, Git, and Microsoft Azure.
+                        Slack is used to brainstorm ideas and for communication purposes within the group. With Trello, (Trello Link somewhere)
+                        a Project Board is created to manage the overall progress of the project and to ensure that each requirement is assigned
+                        to someone so we'll have everything ready for the deliverables. Github is also used to coordinate files and code needed for
+                        the project.
+                    </p>
+
+                    <p>
+                        The project is broken down into the phases below:
+                    </p>
+					<ul>
+                            <li>
+                                Data Preparation: Including EDA, and preparation of training, testing data set
+                            </li>
+                            <li>
+                                Feature Extraction: Extracting useful features using various feature extraction algorithms
+                            </li>
+                            <li>
+                                Model Selection : Test different models in Azure ML studio. Model with accuracy more than 80-85% will be selected to build the final model 
+                            </li>
+                            <li>
+                                Model Building : Building the chosen model and training it on 60-70% of data
+                            </li>
+                            <li>
+                                Model Testing : Testing the model on the remaining 30% of data and check the accuracy levels of it compared to the initial model
+                            </li>
+                        </ul>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+</body>
+
+</html>
